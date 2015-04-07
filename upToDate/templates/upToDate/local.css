@@ -1,0 +1,12 @@
+.subdiv{
+	
+	white-space: nowrap;
+	display: inline-block;
+	background-color: red;
+}
+
+#middle{
+
+	text-decoration : line-through; 
+	color : red;
+}

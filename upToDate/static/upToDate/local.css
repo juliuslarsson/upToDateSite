@@ -1,0 +1,28 @@
+.subdiv{
+	
+	white-space: nowrap;
+	display: inline-block;
+}
+
+#middle{
+
+	text-decoration : line-through; 
+	color : #FF6666;
+}
+
+#rotatediv{
+
+	font-family: fantasy;
+
+
+	transform: rotate(-12deg);
+}
+
+#rotatediv>h3{
+
+	color: #FF6666;
+}
+
+#first{
+	margin-right: 5px;
+}

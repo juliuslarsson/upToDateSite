@@ -1,0 +1,47 @@
+{"tag" : "kamera", "pics" : [
+
+		{"title": "solnedgång", "description" : "Rätt tid, rätt plats", "user" : "Julius", "id" : "001", "urls" : {
+			"smallURL" : "upToDate/kamera/solnedgångLiten.jpg", 
+			"bigURL" : "upToDate/kamera/solnedgångStor.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "375"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "500"}
+		},
+		{"title": "Tennisskor", "description" : "Slitna, men trogna", "user" : "Julius", "id" : "002","urls" : {
+			"smallURL" : "upToDate/kamera/tennisskorLiten.jpg", 
+			"bigURL" : "upToDate/kamera/tennisskorStor.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "500"}
+		},
+		{"title": "Liseberg", "description" : "Bra stäm på Liseberg!", "user" : "Julius", "id" : "003", "urls" : {
+			"smallURL" : "upToDate/kamera/LisebergLiten.jpg", 
+			"bigURL" : "upToDate/kamera/LisebergStor.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Skridskor", "description" : "När man råkar ta med sig två högerskridskor...", "user" : "Julius", "id" : "004", "urls" : {
+			"smallURL" : "upToDate/kamera/skridskorLiten.jpg", 
+			"bigURL" : "upToDate/kamera/skridskorStor.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Basket", "description" : "Basket en fin vårdag.", "user" : "Julius", "id" : "005", "urls" : {
+			"smallURL" : "upToDate/kamera/basketLiten.jpg", 
+			"bigURL" : "upToDate/kamera/basketStor.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Jag", "description" : "...", "user" : "Julius", "id" : "006", "urls" : {
+			"smallURL" : "upToDate/kamera/fotografenLiten.jpg", 
+			"bigURL" : "upToDate/kamera/fotografenStor.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "375"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "500"}
+		},
+		{"title": "Kärlekshälsningen", "description" : "Det värmer...", "user" : "Julius", "id" : "007", "urls" : {
+			"smallURL" : "upToDate/kamera/kärlekshälsningLiten.jpg", 
+			"bigURL" : "upToDate/kamera/kärlekshälsningStor.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "500"}
+		}
+	]
+}
+	

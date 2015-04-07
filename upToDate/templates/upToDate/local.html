@@ -1,0 +1,35 @@
+{% extends "uptodate/index.html" %}
+
+{% block head %}
+
+	
+	<link rel="stylesheet" type="text/css" href="/static/upToDate/local.css"/>
+
+{% endblock %}
+
+{% block title %}
+	<div style="width : 100%; margin-left: 5%">
+		<div class="subdiv" id="first">
+			<h2 id="title">Just nu på</h2>
+		</div>
+		<div class="subdiv" id="middle">
+			<h2 id="title">Flickr</h2>
+		</div>
+		<div class="subdiv" id="rotatediv">
+			<h3 id="title">Julius dator</h3>
+		</div>
+	</div>
+{% endblock %}
+
+{% block previews %}
+
+	{% load staticfiles %}
+	{% for tag in tags %}
+			<div class="imageCollection" id="{{ tag.tagName }}">
+			{% for image in tag.images %}
+					<img class="smallImage" id="{{ image.id }}"src="{% static image.url %}"/>
+			{% endfor %}
+			</div>
+	{% endfor %}
+
+{% endblock %}

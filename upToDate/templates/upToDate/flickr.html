@@ -1,0 +1,41 @@
+{% extends "uptodate/index.html" %}
+
+{% block head %}
+	
+	<link rel="stylesheet" type="text/css" href="/static/upToDate/flickr.css"/>
+
+{% endblock %}
+
+{% block title %}
+	<h2 id="title">Just nu på Flickr</h2>
+	<a href="/uptodate/flickr/?page={{nextPage}}" id="updateContainer">
+		<div class="subdivv" id="first">
+			<p id="title">Byt taggar</p>
+		</div>
+		<div class="subdivv" id="rotate">
+			<p id="rotateParagraph">&#8635;</p>
+		</div>
+	</a>
+{% endblock %}
+
+{% block updateTags %}
+	
+	
+{% endblock %}
+
+
+{% block previews %}
+	
+	{% for tag in tags %}
+			<div class="imageCollection" id="{{ tag.tagName }}">
+			{% for image in tag.images %}
+					<img class="smallImage" id="{{ image.id }}"src="{{ image.url }}"/>
+			{% endfor %}
+			</div>
+	{% endfor %}
+
+{% endblock %}
+
+{% block attribution %}
+<p id="attribution">This product uses the Flickr API but is not endorsed or certified by Flickr.</p>
+{% endblock %}

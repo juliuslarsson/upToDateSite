@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static "upToDate/upToDateAppStyle.css" %}"/>
+	<title>Up To Date</title>
+
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="{% static "upToDate/appScript.js" %}">
+	</script>
+
+	<meta id="state" name="state" content="{{ state }}">
+
+	{% block head %}
+	{% endblock %}
+
+
+<body>
+
+	<div id="header">
+		{% block title %}
+		{% endblock %}
+	</div>
+
+	{% block updateTags %}
+	{% endblock %}
+
+	
+	<div id="preview">
+		<div class="tagLabels">
+			{% for tag in  tags %}
+				<h3 class="tagLabel">{{ tag.tagName }}</h2>
+			{% endfor %}
+		</div>
+		{% block previews %}
+		{% endblock %}
+		
+		<button class="btnChangeCollection" id="btnRight"> &rarr;</button>
+		<button class="btnChangeCollection" id="btnLeft"> &larr; </button>
+		
+
+	</div>
+	<div id="imagesWithTagContainer">
+		<div class="userInfo">
+			<div class="wrapper">
+				<h3 class="message">Ingen tagg vald.</h3>
+			</div>
+			<div class="wrapper">
+				<p class="loading">.</p>
+			</div>
+		</div>
+		
+		<h2 id="imagesWithTagLabel"></h2>
+		<div id="container"></div>
+	</div>
+	<div id="largeImageContainer">
+		
+		<div id="displayer">
+			<div class="userInfo">
+				<div class="wrapper">
+					<h3 class="message">Ingen tagg vald.</h3>
+				</div>
+				<div class="wrapper">
+					<p class="loading">.</p>
+				</div>
+			</div>
+			<h3 id="picInfo"></h3>
+		</div>
+		{% block attribution %}
+	{% endblock %}
+	</div>
+	
+	
+</body>
+
+</html>
+

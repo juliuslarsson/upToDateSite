@@ -1,0 +1,272 @@
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	position: absolute;
+	background-color : white;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	min-width: 1420px;
+	min-height: 680px;
+}
+
+#preview {
+
+	box-shadow: 0px 0px 5px 2px black;
+	position: relative;
+	left: 5%;
+	margin-top: 80px;
+	background-color:#FF6666;
+	width: 52%;
+	display: inline;
+	height: 200px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	display: block;
+}
+
+.smallImage{
+	position: relative;
+	margin: 4px;
+	bottom: -5px;
+}
+.smallImage:hover {
+
+	cursor: pointer;
+}
+
+input {
+	font-size: 14px;
+
+}
+
+#header{
+
+	position: fixed;
+	height: 45px;
+	width: 100%;
+	background-color: black;
+	z-index: 2;
+}
+
+.imageCollection{
+
+	text-align: center;
+	position: absolute;
+	height: auto;
+	bottom : 10px;
+	width: 100%;
+
+}
+
+#btnRight{
+
+	right: 10px;
+}
+#btnLeft{
+
+	left: 10px;
+}
+
+.btnChangeCollection{
+	position: absolute;
+	box-shadow: 0px 0px 10px black;
+	background-color : #lightgray;
+	font-size: 22px;
+	width : 30px;
+	height: 150px;
+	border: none;
+	border-radius: 5px;
+	bottom : 13px;
+	z-index: 1;
+	text-align: center;
+	outline: none;
+
+}
+.btnChangeCollection:hover{
+
+	cursor: default;
+	background-color: white;
+
+}
+
+.tagLabel{
+	color : lightgray;
+	display: inline-block;
+	position: relative;
+	border: inherit;
+	height: 40px;
+	margin-right: 15px;
+	margin-left: 15px;
+	top: -15px;
+
+
+}
+
+.tagLabels{
+
+	text-align: center;
+	width: 100%;
+	height: 20%;
+
+}
+
+.labelHeading{
+
+	color : lightgray;
+}
+
+#imagesWithTagContainer{
+
+	position: absolute;
+
+	background-color: lightgray;
+	width: 36%;
+	min-height: 190px;
+	height: 200px;
+	border-radius: 5px;
+	right: 5%;
+	top: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+	box-shadow: 0px 0px 10px 0px black;
+
+}
+
+.imageWithTag{
+
+	display: inline-block;
+	position: relative;
+	margin : 6px;
+
+}
+
+.imageWithTag:hover{
+
+	cursor: pointer;
+}
+
+#largeImageContainer{
+	position: absolute;
+
+	width: 90%;
+	min-height: 125px;
+	background-color: lightgray;
+	box-shadow: 0px 0px 10px 0px black;
+	margin-left: 5%;
+	margin-top: 12px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	text-align: center;
+
+}
+
+#title{
+
+	margin-left: 5%;
+	margin-top: 8px;
+	color: white;
+}
+.userInfo{
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	top: 48%;
+	margin-top: -20px;
+}
+
+.largeImage{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+
+
+}
+
+#picInfo{
+	position: relative;
+	top: -5px;
+	text-align: center;
+}
+
+#imagesWithTagLabel{
+
+	position: relative;
+
+
+}
+
+#imagesWithTagContainer>#container{
+	position: relative;
+	top: 0px;
+	height: auto;
+	margin-bottom: 15px;
+	width: 100%;
+
+}
+
+#API_keyDiv{
+
+	position: fixed;
+	height: 300px;
+	width:  500px;
+	left: 50%;
+	top: 150px;
+	margin-left: -250px;
+	background-color: lightgray;
+	z-index: 2;
+	border-radius: 10px;
+	text-align: center;
+
+}
+
+button{
+
+	font-size: 18px;
+	height: 30px;
+}
+
+.loading{
+	position: relative;
+	margin-left: 8px;
+
+	font-weight: bold;
+	opacity: 0;
+	-webkit-animation: loading 1s infinite linear;
+
+}
+
+#verifyKey{
+	margin-left: 5px;
+	-webkit-animation: loading 1s infinite linear;
+}
+
+.wrapper{
+	display: inline-block;
+
+}
+
+.btn{
+	color: black;
+	background-color: darkgray;
+	border: none;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.btn:hover{
+	cursor: pointer;
+
+}
+
+
+@-webkit-keyframes loading{
+
+	0% 		{transform : rotate(45deg);}
+	100%	{transform : rotate(405deg);}
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static "upToDate/upToDateAppStyle.css" %}"/>
+	<title>Up To Date</title>
+
+	<script type="text/javascript">
+
+		function showInfo(){
+			document.getElementById("processWrapper").style.opacity = 1;
+		}
+	</script>
+
+
+</head>
+<body>
+
+		<div id="API_keyDiv">
+			<p >
+				Den här applikationen kräver en API-nyckel utfärdad av Flickr.
+				I testningssyfte kan du här ange vilken nyckel du vill använda.
+			</p>
+			<form id="key_form" method="post" action="uptodate/set_key/">{% csrf_token %}
+				<input size="32" type="text" name="api_key"/><br/><br/>
+
+				<input onclick="showInfo()" class="btn" type="submit" value="Använd nyckel"/><br/>	
+			</form>
+			<p>eller</p>
+			<a class="btn" href="uptodate/local/">Fortsätt utan nyckel</a>
+			<br/>
+			<br/>
+
+			<div id="processWrapper" style="opacity : 0">
+				<div style="display: inline-block" >
+					<p >Kontrollerar nyckel</p>
+				</div>
+				<div style="display: inline-block" >
+					<p id="verifyKey">.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+
+</body>
+</html>

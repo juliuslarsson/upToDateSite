@@ -1,0 +1,58 @@
+{"tag" : "uppsala", "pics" : [
+
+		{"title": "Allén", "description" : "-", "user" : "Julius", "id" : "008", "urls" : {
+			"smallURL" : "upToDate/uppsala/litenAlle.jpg", 
+			"bigURL" : "upToDate/uppsala/storAlle.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Cyklar", "description" : "-", "user" : "Julius", "id" : "009","urls" : {
+			"smallURL" : "upToDate/uppsala/litenCyklar.jpg", 
+			"bigURL" : "upToDate/uppsala/storCyklar.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Fyrisån", "description" : "-", "user" : "Julius", "id" : "010", "urls" : {
+			"smallURL" : "upToDate/uppsala/litenFyrisån.jpg", 
+			"bigURL" : "upToDate/uppsala/storFyrisån.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Öppna fält", "description" : ".", "user" : "Julius", "id" : "011", "urls" : {
+			"smallURL" : "upToDate/uppsala/litenFält.jpg", 
+			"bigURL" : "upToDate/uppsala/storFält.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Skymning", "description" : ".", "user" : "Julius", "id" : "012", "urls" : {
+			"smallURL" : "upToDate/uppsala/litenSkymning.jpg", 
+			"bigURL" : "upToDate/uppsala/storSkymning.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "375"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "500"}
+		},
+		{"title": "Skogsturen", "description" : "...", "user" : "Julius", "id" : "013", "urls" : {
+			"smallURL" : "upToDate/uppsala/litenSnö.jpg", 
+			"bigURL" : "upToDate/uppsala/storSnö.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Kvällstennis", "description" : "-", "user" : "Julius", "id" : "014", "urls" : {
+			"smallURL" : "upToDate/uppsala/litenTennisbana.jpg", 
+			"bigURL" : "upToDate/uppsala/storTennisbana.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Engelska parken", "description" : "...", "user" : "Julius", "id" : "015", "urls" : {
+			"smallURL" : "upToDate/uppsala/litenUniversitet.jpg", 
+			"bigURL" : "upToDate/uppsala/storUniversitet.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		},
+		{"title": "Skogsturen del 2", "description" : "...", "user" : "Julius", "id" : "016", "urls" : {
+			"smallURL" : "upToDate/uppsala/litenVatten.jpg", 
+			"bigURL" : "upToDate/uppsala/storVatten.jpg"
+			}, "heights" : { "smallHeight": "150", "bigHeight" : "500"},
+			"widths" : { "smallWidth": "150", "bigWidth" : "375"}
+		}
+	]
+}

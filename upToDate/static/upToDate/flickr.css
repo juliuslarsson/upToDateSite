@@ -1,0 +1,47 @@
+#rotate{
+	font-size: 14px;
+	margin-left: 3px;
+}
+
+.subdivv{
+
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.subdivv>p{
+	color: white;
+	font-size: 14px;
+}
+
+
+#updateContainer{
+	top: 0px;
+	position: absolute;
+	left: 85%;
+
+}
+
+#updateContainer:hover{
+
+	cursor: pointer;
+
+}
+.spin{
+-webkit-animation: loading 1s infinite linear;
+}
+
+#attribution{
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+
+
+	bottom: -35px;
+}
+
+@-webkit-keyframes loading{
+
+	0% 		{transform : rotate(45deg);}
+	100%	{transform : rotate(405deg);}
+}

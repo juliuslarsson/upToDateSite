@@ -14,7 +14,7 @@ def flickr(request):
 					'nextPage' : str(page+1)
 				}
 
-	tagsJson = GetJson({ "method" : "flickr.tags.getHotList", "count" : nrOfTags}, request.session['api_key'])
+	tagsJson = getJson({ "method" : "flickr.tags.getHotList", "count" : nrOfTags}, request.session['api_key'])
 	for tag in tagsJson['hottags']['tag'][(nrOfTags-4):]:
 		context['tags'].append( {'tagName' : tag['_content'], 'images' : []})
 
@@ -25,14 +25,14 @@ def flickr(request):
 
 def getFlickrPreviews(tagName, nrOfImages, api_key):
 	images = []
-	jsonPhotos = GetJson(  {"method" 	: "flickr.photos.search", 
+	jsonPhotos = getJson(  {"method" 	: "flickr.photos.search", 
 							"tags" 		: tagName, 
 							"per_page" 	: nrOfImages
 							}, 
 						api_key)
 
 	for pic in jsonPhotos['photos']['photo']:
-		jsonSizes = GetJson({"method" : "flickr.photos.getSizes", "photo_id" : pic['id']}, api_key)
+		jsonSizes = getJson({"method" : "flickr.photos.getSizes", "photo_id" : pic['id']}, api_key)
 		image = { 'id' : pic['id'] }
 		for size in jsonSizes['sizes']['size']:
 			if (size['label'] == "Large Square"):
@@ -41,7 +41,7 @@ def getFlickrPreviews(tagName, nrOfImages, api_key):
 
 	return images
 
-def GetJson(addParams, api_key):
+def getJson(addParams, api_key):
 
 	paramsDictionary = {"api_key" 		 : api_key, 
 						"format" 		 : "json",
@@ -152,8 +152,8 @@ def flickrImage(request):
 	response = HttpResponse()
 	params = request.GET
 
-	sizes = GetJson({"method" : "flickr.photos.getSizes", "photo_id" : params['id']} , request.session['api_key'])
-	info = GetJson({"method" : "flickr.photos.getInfo", "photo_id" : params['id']} , request.session['api_key'])
+	sizes = getJson({"method" : "flickr.photos.getSizes", "photo_id" : params['id']} , request.session['api_key'])
+	info = getJson({"method" : "flickr.photos.getInfo", "photo_id" : params['id']} , request.session['api_key'])
 
 	for size in sizes['sizes']['size']:
 		if (size['label'] == "Medium"):
